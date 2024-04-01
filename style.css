@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap')
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+
+.section-heading{
+  font-family: "Lato", sans-serif;
+  font-size: 17.6px;
+  color: #FFAE21;
+  font-weight: 900;
+}
+.section-heading-one{
+  font-family: "Lato", sans-serif;
+  font-size: 17.6px;
+  color: #ffffff;
+  font-weight:900;
+}
+.section-heading-two h2{
+  font-family: "Lato", sans-serif;
+  font-size: 51.2px;
+  color: #ffffff;
+}
+.section-sub-heading{
+  font-family: "Lato", sans-serif;
+    font-size: 51.7px;
+    color: #000000;
+    font-weight: 700;
+}
+.section-sub-heading-four{
+  font-family: "Lato", sans-serif;
+    font-size: 51.7px;
+    color: white;
+    font-weight: 700;
+}
+.section-sub-heading-one{
+  font-family: "Lato", sans-serif;
+  font-size: 29.7px;
+  color: #000000;
+  font-weight:700;
+  
+}
+.section-description{
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #555555;
+}
+.section-description-three{
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  color: #555555;
+}
+.section-description-two{
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+.orange-text{
+  font-family: sans-serif;
+  font-size: 51.2px;
+  color: #FFCA2C;
+  font-weight: bold;
+  height: 30px;
+}
+.black-text {
+  font-family: sans-serif;
+  font-size: 51.2px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.header-contacts{
+    background: #393536;
+}
+.header-contacts svg{
+    color: #FFAE21;
+    width: 30px;
+    height: 30px;
+}
+.header-contacts p{
+    color: #fff;
+}
+
+/* .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1250px;
+   
+} */
+
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1250px;
+}
+.nav-link{
+  margin: 0 20px;
+}
+.get-in-touch-social-icon{
+    display: flex;
+  margin-left: 50px;
+}
+.get-in-touch-social-div{
+  height: 55px;
+  width: 55px;
+}
+.get-in-touch-social-div svg{
+  color: #FFAE21;
+  height: 40px;
+  width: 40px;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+
+.header-contacts .header-social-icons svg{
+    background: #fff;
+    color: #393536;
+    padding: 10px;
+    border-radius: 50px;
+}
+.header-contacts .nav-address{
+    color: #fff;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+   
+    justify-content: space-evenly;
+}
+/* .img-fluid {
+    max-width: 100%;
+    height: 100px;
+    width: 100%;
+} */
+.transport{
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: #050505;
+  font-weight:700;
+}
+.about-img-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.about-border {
+  border: 2px solid orange;
+  width: 80%;
+  margin-left: 32px;
+  border-radius: 20px;
+ 
+
+}
+.about-img-wrapper-two {
+  display: flex;
+  position: relative;
+  right: -119px;
+  height: 100%;
+}
+.about-border-two {
+  border: 2px solid orange;
+  width: 60%;
+  right: 90px;
+  border-radius: 20px;
+ 
+
+}
+
+
+.about-img-three {
+
+  position: relative;
+  margin-left : 10%;
+}
+
+
+
+.about-img-three img {
+  width: 100%;
+  height: auto;
+  margin-left : 10%;
+  height: 70%;
+}
+
+
+.about-img-three {
+  position: absolute;
+  top: 50px; /* Adjust top offset */
+  right: 0;
+}
+
+
+
+button.btn.btn-warning {
+  margin-left: 50px;
+}
+.why-us{
+  margin-bottom: 150px;
+  margin-top: 50px;
+  display: inline-block;
+}
+.btn{
+
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    font-weight: bolder;
+    color: black;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  
+  justify-content: space-evenly;
+}
+.nav-link{
+    color: black;
+}
+
+  /* .notice{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Assets/image/loading-of-cargo-airplane-2023-11-27-05-35-58-utc-1536x1024.jpg);
+   
+     
+      
+  } */
+  
+ 
+  .first-text {
+    font-size: 17px;
+    color: #FFCA2C;
+    font-weight: bolder;
+    display: flex;
+    
+  }
+  
+.user{
+  margin-top: px;
+  justify-content: space-between;
+}
+   
+  .last-text {
+    font-size: 17px;
+    color: #FFCA2C;
+    
+    display: flex;
+    
+  }
+  .done-text{
+    text-align: left;
+    font-size: 20px;
+    color: #221A25;
+    font-weight: 600;
+    font-family: "Varela Round", sans-serif;
+    
+    display: flex;
+  }
+  
+  .first-text p {
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+  .first-two {
+    font-size: 60.8px;
+    color: black;
+    font-weight: bolder;
+    margin-left : 50px;
+    font-family: sans-serif;
+   
+  }
+  .first-two p{
+    font-family: "Lato", sans-serif;
+  }
+  .first-three {
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    margin-left : 50px;
+    font-family: sans-serif;
+  }
+  .hero-box{
+    
+    padding-top: 10px;
+  }
+
+.truck img{
+    margin-right: 40px;
+  }
+  .partners{
+    margin-top: 250px;
+  }
+
+  .containers img{
+    width : 150px;
+    align-items: center;
+  
+  }
+  .ptn-logo{
+    width : 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ser-info {
+    margin: 20px;
+  }
+
+  .fs-1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .fs-2 {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .card-one-img {
+    background-image: url("Assets/worker-loading-cargo-in-storage-room-2023-11-27-04-59-46-utc.jpg");
+    background-size: cover;
+    flex: 1 1 auto;
+    padding: 2rem 3rem;
+    background-color: #141414;
+    position: relative;
+}
+.card-two-img{
+  background-image: url("Assets/IATA-News.jpg");
+    background-size: cover;
+    flex: 1 1 auto;
+    padding: 2rem 3rem;
+    background-color: #141414;
+    position: relative;
+}
+
+.hero-box .card-body::before{ 
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 174, 33, 0.5),rgba(255, 174, 33, 0.5));
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+    
+}
+.hero-box .btn{
+  z-index: 2;
+  position: relative;
+}
+.btn{
+ 
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+}
+
+
+
+
+/* About Us */
+.text-start {
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+}
+
+.about-img-wrapper{
+  position: relative;
+  height: 100vh;
+}
+.about-img-one {
+  position: absolute;
+  left: 5%;
+  top: -53px;
+  left : 0px;
+}
+
+
+.about-img-one img{
+  border-radius: 10px;
+  height: 70%;
+  width: 60%;
+
+}
+
+.about-img-two{
+  position: relative;
+  top: -35px;
+  left: 80px;
+  
+}
+.about-img-two img{
+  border-radius: 10px;
+  height: 300px;
+  width : 500px;
+}
+.about-img-three{
+  position: absolute;
+  top: 70%;
+  left : -15%;
+  margin-left: 10%;
+  right: 10%;
+
+  
+}
+.about-img-three img{
+  border-radius: 10px;
+  width: 70%;
+  height: 70;
+}
+.orange-background{
+  background-color: orange; 
+  height: 35%;
+  width : 45%;
+  left: 60%;
+  top: 15%;
+  padding-top: 15px;
+  border: 4px solid black; /* White border */
+  border-radius: 10px;
+  z-index: 4;
+  position: relative;
+}
+
+
+/* Our Service */
+
+
+.notice{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Assets/image/loading-of-cargo-airplane-2023-11-27-05-35-58-utc-1536x1024.jpg);
+  background-size: cover;
+    
+    width: 100%;
+   
+    
+}
+.bar-info{
+  margin-left: 20px;
+}
+
+
+.pat{
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-abt{
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.notice-button{
+  background-color: #FFAE21;
+  padding: 16px 32px 12px 15px;
+}
+
+
+.testimonial-content{
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  padding: 2em;
+}
+.test-star svg{
+  width: 15px;
+  height: 15px;
+}
+
+.test-img img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.test-img h3{
+    font-size: 16px;
+}
+
+.why-right{
+  justify-content: right;
+}
+
+
+
+
+
+
+.packed {
+  height: 61px;
+  width:89px;
+  color: #f14902;
+}
+.packed p{
+  font-family: "Lato", sans-serif;
+  font-size: 29.7px;
+  color: #000000;
+  font-weight:700;
+}
+
+.del {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.del-main{
+  
+  font-family: "Lato", sans-serif;
+  font-size: 51.7px;
+  color:#f14902;
+  font-weight:700;
+  margin-bottom: -12px;
+}
+.del-new{
+  font-family: "Lato", sans-serif;
+  font-size: 51.7px;
+  color: white;
+  font-weight:700;
+  margin-bottom: -12px;
+}
+.touch-grid{
+  padding-top: 50px;
+ 
+  background-size: cover;
+  
+}
+.del-des {
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  color: #f14902;
+  margin-bottom: 0%;
+  margin-bottom: 40px;
+  
+}
+.del-main{
+  background-color: whitesmoke;
+  background-size: cover;
+}
+
+.get {
+  position: relative;
+  background-image: url(Assets/image/loading-of-cargo-airplane-2023-11-27-05-35-58-utc-1536x1024.jpg);
+  background-size: cover;
+  width: 645px;
+  height: 520px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Assets/image/loading-of-cargo-airplane-2023-11-27-05-35-58-utc-1536x1024.jpg);
+  background-size: cover;
+    
+    width: 100%;
+    margin-top: 50px;
+    right: -30px;
+}
+.get-two{
+  background-color: rgb(255, 174, 33);
+  /* width: 645px; */
+  margin-bottom: 50px;
+  position: absolute;
+  /* transform: matrix(1, 0, 0, 1, 0, 0); */
+  /* width: 900px; */
+  /* right: 0; */
+  transform: translateY(-155px);
+
+}
+.get img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  filter: brightness(0) invert(1);
+}
+
+.get svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.ser-info-one {
+  margin-left: 50px;
+  padding-top: 30px;
+ 
+}
+
+.location{
+  font-size: 21px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+.location-des{
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+
+
+/* FAQ */
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@import url(https://fonts.googleapis.com/css?family=Open-Sans);
+
+.faq-heading {
+  font-family: Lato;   
+  font-weight: 400;
+  font-size: 19px;
+   -webkit-transition: text-indent 0.2s;
+  text-indent: 20px;
+  color: #333;
+}
+
+.faq-text {
+  font-family: Open Sans;   
+  font-weight: 400;
+  color: #919191;
+  width:95%;
+  padding-left:20px;
+  margin-bottom:30px;
+}
+.hero-section{
+  height: min-content;
+}
+
+.faq {
+  
+ 
+  background: white;
+  border-radius: 4px;
+  position: relative;
+  border: 1px solid #E1E1E1;
+  margin-top: 30px;
+}
+.faq label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 56px;
+  padding-top:1px;
+ 
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq .faq-arrow {
+  width: 5px;
+  height: 5px;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid rgba(0, 0, 0, 0.33);
+  border-right: 2px solid rgba(0, 0, 0, 0.33);
+  float: right;
+  position: relative;
+  top: -30px;
+  right: 27px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+ .faq input[type="checkbox"]:checked + label > .faq-arrow {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+ .faq input[type="checkbox"]:checked + label {
+  display: block;
+  background: rgba(255,255,255,255) !important;
+  color: #4f7351;
+  height: 225px;
+  transition: height 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+ .faq input[type='checkbox']:not(:checked) + label {
+  display: block;
+  transition: height 0.8s;
+  height: 40px;
+  @webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Footer */
+
+/* a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #6f6f6f;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+} */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+
+
+
+/* Footer */
+.site-footer {
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  padding: 30px 0;
+  font-size: 15px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* Responsive adjustments with Media Queries */
+@media (max-width: 768px) {
+  .row > .col-md-3, 
+  .row > .col-md-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px; 
+  }
+}
+
+
+
+
+

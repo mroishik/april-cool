@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/blogs/blog-4/assets/css/blog-4.css">
+  <!-- Main  CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Assets/css/slick.css">
+  <link rel="stylesheet" href="Assets/css/slick-theme.css">
+  
+</head>
+<body>
+<header>
+  <div class="header-contacts py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <!-- address -->
+        <div class="d-flex">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4m0-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2"/><path fill="currentColor" d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819M12 4c3.309 0 6 2.691 6 6.005c.021 4.438-4.388 8.423-6 9.73c-1.611-1.308-6.021-5.294-6-9.735c0-3.309 2.691-6 6-6"/></svg>
+          </div>
+          <div class="ms-3">
+            <p class="nav-address"> 4554 Admiral Peary Hwy Apt 408 Ebensburg, PA 15931</p>
+           
+          </div>
+        </div>
+        <!-- phone -->
+        <div class="d-flex">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.733 2.043c1.217-1.21 3.221-.995 4.24.367l1.262 1.684c.83 1.108.756 2.656-.229 3.635l-.238.238a.653.653 0 0 0-.008.306c.063.408.404 1.272 1.832 2.692c1.428 1.42 2.298 1.76 2.712 1.824a.668.668 0 0 0 .315-.009l.408-.406c.876-.87 2.22-1.033 3.304-.444l1.91 1.04c1.637.888 2.05 3.112.71 4.445l-1.421 1.412c-.448.445-1.05.816-1.784.885c-1.81.169-6.027-.047-10.46-4.454c-4.137-4.114-4.931-7.702-5.032-9.47l.749-.042l-.749.042c-.05-.894.372-1.65.91-2.184zm3.04 1.266c-.507-.677-1.451-.731-1.983-.202l-1.57 1.56c-.33.328-.488.69-.468 1.036c.08 1.405.72 4.642 4.592 8.492c4.062 4.038 7.813 4.159 9.263 4.023c.296-.027.59-.181.865-.454l1.42-1.413c.578-.574.451-1.62-.367-2.064l-1.91-1.039c-.528-.286-1.146-.192-1.53.19l-.455.453l-.53-.532c.53.532.529.533.528.533l-.001.002l-.003.003l-.007.006l-.015.014a1.11 1.11 0 0 1-.136.106c-.08.053-.186.112-.319.161c-.27.101-.628.155-1.07.087c-.867-.133-2.016-.724-3.543-2.242c-1.526-1.518-2.122-2.66-2.256-3.526c-.069-.442-.014-.8.088-1.07a1.527 1.527 0 0 1 .238-.42l.032-.035l.014-.015l.006-.006l.003-.003l.002-.002l.53.53l-.53-.531l.288-.285c.428-.427.488-1.134.085-1.673z" clip-rule="evenodd"/></svg>
+          </div>
+          <div class=" nav-address ms-3">
+            
+            <p class="nav-address">+1 (213) 652-5106</p>
+          </div>
+        </div>
+        <!-- email -->
+        <div class="d-flex">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><path d="M22 7.535V17a3 3 0 0 1-2.824 2.995L19 20H5a3 3 0 0 1-2.995-2.824L2 17V7.535l9.445 6.297l.116.066a1 1 0 0 0 .878 0l.116-.066z"/><path d="M19 4c1.08 0 2.027.57 2.555 1.427L12 11.797l-9.555-6.37a2.999 2.999 0 0 1 2.354-1.42L5 4z"/></g></svg>
+          </div>
+          <div class="ms-3">
+            <p class="nav-address">info@eldtrex.com</p>
+            
+          </div>
+        </div>
+        <div class="header-social-icons">
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"><path stroke-dasharray="24" stroke-dashoffset="24" d="M17 4L15 4C12.5 4 11 5.5 11 8V20"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="24;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M8 12H15"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="12;0"/></path></g></svg></a>
+          <a href="" class="ms-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="66" stroke-dashoffset="66" d="M12 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="66;132"/></path><path stroke-dasharray="26" stroke-dashoffset="26" d="M12 8C14.20914 8 16 9.79086 16 12C16 14.20914 14.20914 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.4s" values="26;0"/></path></g><circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="1.1s" dur="0.4s" values="0;1"/></circle></svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="Assets/image/Logo.png" alt="" class="img-fluid" style="width: 200px";></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-3">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Refferal Programe</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact Us
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-warning ">Login</button>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero-section-->
+<div class="hero-section">
+  <div class="container-fluid">
+    <div class = "first-text">
+      <P>
+      BEYOND BOUNDARIES</P>
+    </div>
+    <div class="first-two">
+      <p class="text-white">
+       Milons miles with smiles
+      </p>
+    </div>
+    
+    <div class = "first-three">
+      <p class="text-white">
+         <p class="text-white last-text">120,000+ companies - from small businesses to Fortune 500 enterprises use Eld Trex to transform the safety, <br> productivity, and profitability of their operations</p>
+    </div>
+    <div class="container">
+      <div class="hero-box">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+    
+              <div class="card-body">
+                <h5 class="card-title "style="color: white;">El Drex Bluetooth ELD</h5>
+               
+                <p class="card-text" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content. card title and make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-outline-warning">Read More</button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white;">El Drex Geomatricx ELD</h5>
+               
+                <p class="card-text" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content  card title and make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-outline-warning">Read More</button>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="truck">
+              <img src="Assets/three.PNG" alt="" srcset="">
+            </div>
+           
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!--Top End-->
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      
+    </div>
+    <div class="col-6"></div>
+  </div>
+</div>
+
+<!--About us-->
+
+<div class="container-abt">
+  <div class="row align-items-start">
+    <div class="col-md-6">
+      <div class="about-img-wrapper">
+        <div class="about-border" > 
+            <div class=" text-center orange-background">
+          <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><g fill="none"><path stroke="#f14902" stroke-width="2.15" d="M4 9.657c0-.818 0-1.226.152-1.594c.152-.367.442-.657 1.02-1.235l.656-.656c.578-.578.868-.868 1.235-1.02C7.431 5 7.84 5 8.657 5h6.686c.818 0 1.226 0 1.594.152c.367.152.656.442 1.235 1.02l.656.656c.579.578.867.868 1.02 1.235c.152.368.152.776.152 1.594V16c0 1.886 0 2.828-.586 3.414C18.828 20 17.886 20 16 20H8c-1.886 0-2.828 0-3.414-.586C4 18.828 4 17.886 4 16z"/><path stroke="#f14902" stroke-linecap="round" stroke-width="2.15" d="M4 10h16"/><path fill="#f14902" d="M14.833 9H9.166c-.235 0-.353 0-.426.073c-.074.073-.074.191-.074.427v4.167c0 .765 0 1.147.1 1.352a1 1 0 0 0 1.231.51c.215-.075.486-.345 1.027-.886c.25-.25.375-.376.508-.446a1 1 0 0 1 .935 0c.133.07.259.196.51.446c.54.54.81.811 1.026.887a1 1 0 0 0 1.231-.51c.1-.206.1-.588.1-1.353V9.5c0-.236 0-.354-.074-.427C15.187 9 15.069 9 14.833 9"/></g></svg>
+            
+            <p class="del-new">250K+</p>
+            <p class="del-des">Packet Delivered</p>
+          </div>
+          <div class="about-img-one">
+          <img src="Assets/image/loading-of-cargo-airplane-2023-11-27-05-35-58-utc-1536x1024.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="about-img-two">
+          <img src="Assets/image/group-of-man-and-woman-worker-put-hand-on-each-oth-2023-11-27-05-37-00-utc-1536x1024.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="about-img-three">
+          <img src="Assets/image/worker-loading-cargo-in-storage-room-2023-11-27-04-59-46-utc.jpg" alt="" class="img-fluid">
+        </div>
+        </div>
+        
+       
+        
+        
+        
+        
+        
+      </div>
+    </div>
+    <div class="col-md-6 ">
+      <p class="section-heading">ABOUT US</p>
+      <p class="section-sub-heading ">Making our drivers Life easy with our Fleet <span class="orange-text">Mangement Service</span></p>
+      <p class="text-start">ELD Trex provides fleet management service in USA to ensure your business ELD complied. We are FMCSA registered electronic logging device provider. ELD helps to create an accurate log with a reminder for the drivers to log in and log out. In this way, it becomes possible to know about the real-time availability and hours of service (HOS). If required, you can easily track down the unassigned logs. Despite staying in a remote location, you can see where is your truck and check the driver's whereabouts thanks to the ELD provider in USA.
+        Etiam gravida ante quis dui fermentum congue. Nullam placerat aliquet leo sit amet maximus. Vestibulum nec efficitur leo. Etiam aliquet quis erat nec laoreet in quis</p>
+          <div class="d-flex">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256"><path fill="#f4eb01" d="m243.71 118.52l-14-35A12 12 0 0 0 218.58 76H180V64a4 4 0 0 0-4-4H24a12 12 0 0 0-12 12v112a12 12 0 0 0 12 12h20.29a28 28 0 0 0 55.42 0h56.58a28 28 0 0 0 55.42 0H232a12 12 0 0 0 12-12v-64a4 4 0 0 0-.29-1.48M180 84h38.58a4 4 0 0 1 3.72 2.51L234.09 116H180ZM20 72a4 4 0 0 1 4-4h148v72H20Zm52 140a20 20 0 1 1 20-20a20 20 0 0 1-20 20m84.29-24H99.71a28 28 0 0 0-55.42 0H24a4 4 0 0 1-4-4v-36h152v18.71A28.05 28.05 0 0 0 156.29 188M184 212a20 20 0 1 1 20-20a20 20 0 0 1-20 20m52-28a4 4 0 0 1-4 4h-20.29A28 28 0 0 0 180 164.29V124h56Z"/></svg>
+            </div>
+            <div class="ms-3">
+              <p class="transport ">Transport Solutions</p>
+              <p class="text-start fs-6 text">Transforming Your Cargo & Logistics Experience</p>
+            </div>
+          
+        </div>
+        <div class="d-flex align-items-start">
+          <button type="button" class="btn btn-warning ">Discover More</button>
+          
+        </div>
+         
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Our Partner -->
+
+<div class="partners">
+  <div class="containers">
+    <div class="row">
+        <div class="col-6">
+          <P class="fs-1 text">More Than 10,000</P>
+        </div>
+        <div class="col-6 d-flex pat">
+          <div class="ptn-logo" ><img src="Assets/image/logoipsum-325.png" alt="" srcset=""></div>
+          <div class="ptn-logo" ><img src="Assets/image/logoipsum-325.png" alt="" srcset=""></div>
+          <div class="ptn-logo"  ><img src="Assets/image/logoipsum-325.png" alt="" srcset=""></div>
+        </div>
+    </div>
+      
+</div>
+</div>
+
+
+<!-- Our Services -->
+<div class="services">
+  <div class="ser-info">
+    <P class="section-heading">OUR SERVICE</P>
+    <h2 class="section-sub-heading">Eldex your business <br> with <span class="orange-text">Our services</span> </h2>
+    <p class="services-txt-head-dtl"></p>
+    <p class="section-description">Praesent volutpat tempor ligula vel pulvinar. Nullam sed erat finibus, accumsan sed sapien eu. Donec vel facilisis sapien, sed pulvinar lectus. Praesent et dictum sed dolor nec condimentum. Morbi sed volutpat nisl ipsum.</p>
+  </div>
+  <div class="container">
+    <div class="hero-box">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+  
+            <div class="card-body">
+              <div class="icon-one">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="white" d="M18 18.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5s.67 1.5 1.5 1.5m1.5-9H17V12h4.46zM6 18.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5s.67 1.5 1.5 1.5M20 8l3 4v5h-2c0 1.66-1.34 3-3 3s-3-1.34-3-3H9c0 1.66-1.34 3-3 3s-3-1.34-3-3H1V6c0-1.11.89-2 2-2h14v4zM3 6v9h.76c.55-.61 1.35-1 2.24-1c.89 0 1.69.39 2.24 1H15V6z"/></svg>
+              </div>
+              <h5 class="card-title "style="color: white;">Land Freight</h5>
+             
+              <p class="card-text" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="button" class="btn btn-outline-warning">Read More</button>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body-none">
+              <div class="icon-one">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><g fill="none" stroke="#FFAD1F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 2v7.5M19 5l-5.23 5.23M22 12h-7.5m4.5 7l-5.23-5.23M12 14.5V22m-1.77-8.23L5 19m4.5-7H2m8.23-1.77L5 5"/><circle cx="12" cy="12" r="2.5"/></g></svg>
+              </div>
+              <h5 class="card-title" style="color: #FEAE21;">EldEld Trex' Geometris</h5>
+             
+              <p class="card-text" style="color: #FEAE21;">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="button" class="btn btn-outline-warning">Read More</button>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body-none">
+              <div class="icon-one">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="#FFAD1F" d="M20.56 3.91c.59.59.59 1.54 0 2.12l-3.89 3.89l2.12 9.19l-1.41 1.42l-3.88-7.43L9.6 17l.36 2.47l-1.07 1.06l-1.76-3.18l-3.19-1.77L5 14.5l2.5.37L11.37 11L3.94 7.09l1.42-1.41l9.19 2.12l3.89-3.89c.56-.58 1.56-.58 2.12 0"/></svg>
+              </div>
+              <h5 class="card-title" style="color: #FEAE21;">EldAl Dual Dash Camera</h5>
+             
+              <p class="card-text" style="color: #FEAE21;">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="button" class="btn btn-outline-warning">Read More</button>
+             
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <button type="button" class="discover-btn">View All services</button>
+        
+    </div>
+  </div>
+</div>
+
+
+<!-- Why Choose  Us -->
+<div class="why-us"><div class="container-why">
+  <div class="row">
+    <div class="col-md-6 ">
+      <div class="bar-info">
+        <p class="section-heading">Why Choose Us</p>
+        <p class="section-sub-heading">Fleet Management Service <br>in your Country</p>
+        <p class="text-start">Praesent volutpat tempor ligula vel pulvinar. Nullam sed erat finibus, accumsan sed sapien eu, laoreet lorem. Donec vel facilisis sapien, sed pulvinar lectus. Praesent et dictum sed dolor nec condimentum. Morbi sed volutpat nisl ipsum. Etiam gravida ante quis dui fermentum congue. Nullam placerat aliquet leo sit amet maximus. Vestibulum nec efficitur leo. Etiam aliquet quis erat nec laoreet in quis</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #ff8800; border-radius: 10px;">
+          </div>
+      </div>
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #ff8800; border-radius: 10px;">
+          </div>
+      </div>
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #ff8800; border-radius: 10px;">
+          </div>
+      </div>
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #ff8800; border-radius: 10px;">
+          </div>
+      </div>
+      
+
+      </div>
+     
+       
+      
+      
+    </div>
+
+    <div class="col-md-6 ">
+      <div class="about-img-wrapper-two">
+        <div class="about-border-two" > 
+            
+           <div class="about-img-one-re">
+          <img src="Assets/image/loading-of-cargo-airplane-2023-11-27-05-35-58-utc-1536x1024.jpg" alt="" class="img-fluid">
+        </div>
+       <div class="about-img-two-re">
+          <img src="Assets/image/group-of-man-and-woman-worker-put-hand-on-each-oth-2023-11-27-05-37-00-utc-1536x1024.jpg" alt="" class="img-fluid">
+        </div>
+        <div class=" text-center orange-background-re">
+          <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><g fill="none"><path stroke="#f14902" stroke-width="2.15" d="M4 9.657c0-.818 0-1.226.152-1.594c.152-.367.442-.657 1.02-1.235l.656-.656c.578-.578.868-.868 1.235-1.02C7.431 5 7.84 5 8.657 5h6.686c.818 0 1.226 0 1.594.152c.367.152.656.442 1.235 1.02l.656.656c.579.578.867.868 1.02 1.235c.152.368.152.776.152 1.594V16c0 1.886 0 2.828-.586 3.414C18.828 20 17.886 20 16 20H8c-1.886 0-2.828 0-3.414-.586C4 18.828 4 17.886 4 16z"/><path stroke="#f14902" stroke-linecap="round" stroke-width="2.15" d="M4 10h16"/><path fill="#f14902" d="M14.833 9H9.166c-.235 0-.353 0-.426.073c-.074.073-.074.191-.074.427v4.167c0 .765 0 1.147.1 1.352a1 1 0 0 0 1.231.51c.215-.075.486-.345 1.027-.886c.25-.25.375-.376.508-.446a1 1 0 0 1 .935 0c.133.07.259.196.51.446c.54.54.81.811 1.026.887a1 1 0 0 0 1.231-.51c.1-.206.1-.588.1-1.353V9.5c0-.236 0-.354-.074-.427C15.187 9 15.069 9 14.833 9"/></g></svg>
+            
+            <p class="del-new">250K+</p>
+            <p class="del-des">Packet Delivered</p>
+          </div>
+        
+        </div>
+        
+       
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div></div>
+
+
+
+<!-- card form -->
+<div class="notice py-5">
+  <div class="notice-frame">
+    <div class="text-center">
+      <h2 class="section-sub-heading text-white">Click Now For <span class="orange-text">Eld Trex</span> Management  </h2>
+      <div class="text-center text-white">
+        <p>We are top-notch at bluetooth and cargo services</p>
+        <div class="note-btn mt-5">
+          <a href="service.html" class="notice-button mt-5">Contact Us</a>
+        </div>
+        
+   
+      </div>
+    </div>
+    
+    
+  </div>
+  
+</div>
+
+<!--Testimonial-->
+<div class="testimonial">
+  <div class="ser-info">
+    <P class="section-heading text-center">Testimonial</P>
+    <h2 class="section-sub-heading text-center">Client <span class="orange-text">Reviews</span> </h2>
+    <p class="services-txt-head-dtl"></p>
+    <p class="section-description text-center">Praesent volutpat tempor ligula vel pulvinar. Nullam sed erat finibus, accumsan sed sapien eu. Donec vel facilisis sapien, sed pulvinar lectus. Praesent et dictum sed dolor nec condimentum. Morbi sed volutpat nisl ipsum.</p>
+  </div>
+
+      <div class="testimonial-wrapper">
+          <div class="testimonial-content mx-3 text-center">
+            <div class="test-star my-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <div class="test-details">
+              <p class="test-text">Following the industry standards, we have installed ELD Trex Bluetooth Eld. Fulfilling our requirements, it has worked wonderfully. Professionals have been quick with customer service. We like to recommend others to install this device as soon as possible.</p>
+            </div>
+            <div class="test-img">
+              <img src="Assets/image/profileone.jpg" alt="" srcset="">
+              <h3 class="my-2">Joe Bidan</h3>
+            </div>
+          </div>
+          <div class="testimonial-content mx-3 text-center">
+            <div class="test-star my-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <div class="test-details">
+              <p class="test-text">Following the industry standards, we have installed ELD Trex Bluetooth Eld. Fulfilling our requirements, it has worked wonderfully. Professionals have been quick with customer service. We like to recommend others to install this device as soon as possible.</p>
+            </div>
+            <div class="test-img">
+              <img src="Assets/image/profileone.jpg" alt="" srcset="">
+              <h3 class="my-2">Joe Bidan</h3>
+            </div>
+          </div>
+          <div class="testimonial-content mx-3 text-center">
+            <div class="test-star my-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#faf200" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <div class="test-details">
+              <p class="test-text">Following the industry standards, we have installed ELD Trex Bluetooth Eld. Fulfilling our requirements, it has worked wonderfully. Professionals have been quick with customer service. We like to recommend others to install this device as soon as possible.</p>
+            </div>
+            <div class="test-img">
+              <img src="Assets/image/profileone.jpg" alt="" srcset="">
+              <h3 class="my-2">Joe Bidan</h3>
+            </div>
+          </div>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- connter-bar -->
+
+
+<div class="del-main row align-items-center">
+
+  <div class="col d-flex flex-column align-items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><g fill="none"><path stroke="#f14902" stroke-width="2.15" d="M4 9.657c0-.818 0-1.226.152-1.594c.152-.367.442-.657 1.02-1.235l.656-.656c.578-.578.868-.868 1.235-1.02C7.431 5 7.84 5 8.657 5h6.686c.818 0 1.226 0 1.594.152c.367.152.656.442 1.235 1.02l.656.656c.579.578.867.868 1.02 1.235c.152.368.152.776.152 1.594V16c0 1.886 0 2.828-.586 3.414C18.828 20 17.886 20 16 20H8c-1.886 0-2.828 0-3.414-.586C4 18.828 4 17.886 4 16z"/><path stroke="#f14902" stroke-linecap="round" stroke-width="2.15" d="M4 10h16"/><path fill="#f14902" d="M14.833 9H9.166c-.235 0-.353 0-.426.073c-.074.073-.074.191-.074.427v4.167c0 .765 0 1.147.1 1.352a1 1 0 0 0 1.231.51c.215-.075.486-.345 1.027-.886c.25-.25.375-.376.508-.446a1 1 0 0 1 .935 0c.133.07.259.196.51.446c.54.54.81.811 1.026.887a1 1 0 0 0 1.231-.51c.1-.206.1-.588.1-1.353V9.5c0-.236 0-.354-.074-.427C15.187 9 15.069 9 14.833 9"/></g></svg>
+      
+      <p class="del-main">250K+</p>
+      <p class="del-des">Packet Delivered</p>
+    </div>
+    <div class="col d-flex flex-column align-items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="#f14902" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m4.004 10.878c-.345-.525-.594-.903-1.542-.753c-1.79.284-1.989.597-2.074 1.113l-.024.156l-.025.166c-.097.683-.094.941.22 1.27c1.265 1.328 2.023 2.285 2.253 2.845c.112.273.4 1.1.202 1.918a8.185 8.185 0 0 0 3.151-2.237c.11-.374.19-.84.19-1.404v-.105c0-.922 0-1.343-.652-1.716a7.354 7.354 0 0 0-.645-.325c-.367-.167-.61-.276-.938-.756a6.47 6.47 0 0 1-.116-.172M12 3.833c-2.317 0-4.41.966-5.896 2.516c.177.123.331.296.437.534c.204.457.204.928.204 1.345c0 .328 0 .64.105.865c.144.308.766.44 1.315.554c.197.042.399.084.583.135c.506.14.898.595 1.211.96c.13.151.323.374.42.43c.05-.036.211-.211.29-.498c.062-.22.044-.414-.045-.52c-.56-.66-.529-1.93-.356-2.399c.272-.739 1.122-.684 1.744-.644c.232.015.45.03.614.009c.622-.078.814-1.025.949-1.21c.292-.4 1.186-1.003 1.74-1.375A8.138 8.138 0 0 0 12 3.833"/></svg>
+    <div class="del"></div>
+    <p class="del-main">15k+</p>
+    <p class="del-des">Countries Covered</p>
+  </div>
+  <div class="col d-flex flex-column align-items-center ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 28 28"><path fill="#f14902" d="M17.754 11c.966 0 1.75.784 1.75 1.75v6.749a5.501 5.501 0 0 1-11.002 0V12.75c0-.966.783-1.75 1.75-1.75zM3.75 11l4.382-.002a2.73 2.73 0 0 0-.621 1.532l-.01.22v6.749c0 1.133.291 2.199.8 3.127A4.501 4.501 0 0 1 2 18.499V12.75A1.752 1.752 0 0 1 3.751 11m16.124-.002L24.25 11c.966 0 1.75.784 1.75 1.75v5.75a4.5 4.5 0 0 1-6.298 4.127l.056-.102c.429-.813.69-1.729.738-2.7l.008-.326V12.75c0-.666-.237-1.276-.63-1.752M14 3a3.5 3.5 0 1 1 0 7a3.5 3.5 0 0 1 0-7m8.003 1a3 3 0 1 1 0 6a3 3 0 0 1 0-6M5.997 4a3 3 0 1 1 0 6a3 3 0 0 1 0-6"/></svg>
+    <div class="del"></div>
+    <p class="del-main">10K+</p>
+    <p class="del-des">Sactisfied Customers</p>
+  </div>
+  <div class="col d-flex flex-column align-items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path fill="none" stroke="#f14902" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.05" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+    <div class="del"></div>
+    <p class="del-main">5K+</p>
+    <p class="del-des">Office Everywhere</p>
+  </div>
+</div>
+
+
+<!-- Blogs and news -->
+<div class="blogs">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="ser-info">
+        <p class="section-heading">BLOG AND NEWS</p>
+        <h2 class="section-sub-heading">Eld Trex <span class="orange-text">News Update</span> </h2>
+        <p class="section-description text-start">Praesent volutpat tempor ligula vel pulvinar. Nullam sed erat finibus, accumsan sed sapien eu. Donec vel facilisis sapien, sed pulvinar lectus. Praesent et dictum sed dolor nec condimentum. Morbi sed volutpat nisl ipsum.</p>
+        <button type="button" class="btn btn-warning px-3">View All services</button>
+      </div>
+    </div>
+  
+  
+    <div class="user col-md-6 d-flex"> 
+      <div class="card" style="width: 20rem">
+        <img src="Assets/image/cardone.jpg" class="card-img-top" alt="...">
+        <div class=" d-flex ">
+          <div class="ms-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256"><path fill="#d7d004" d="M230.92 212c-15.23-26.33-38.7-45.21-66.09-54.16a72 72 0 1 0-73.66 0c-27.39 8.94-50.86 27.82-66.09 54.16a8 8 0 1 0 13.85 8c18.84-32.56 52.14-52 89.07-52s70.23 19.44 89.07 52a8 8 0 1 0 13.85-8M72 96a56 56 0 1 1 56 56a56.06 56.06 0 0 1-56-56"/></svg>
+            
+          </div>
+          <p class="last-text "   style="font-family:  Round, sans-serif";> azkartm</p>
+          <div class="ms-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="#d7d004" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/></svg>
+            
+          </div>
+          <p class="last-text "   style="font-family:  Round, sans-serif";> Kolkata</p>
+           
+          
+        </div>
+        <p class="done-text text-center">Save Time With Home Delivery</p>
+        <p class="section-description-three">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis. Vivamus ac ultrices diam.</p>
+          <a href="http://" class="first-text">Read More ></a>
+      </div>
+      <div class="card" style="width: 20rem">
+        <img src="Assets/image/cardtwo.jpg" class="card-img-top" alt="...">
+        <div class=" d-flex ">
+          <div class="ms-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256"><path fill="#d7d004" d="M230.92 212c-15.23-26.33-38.7-45.21-66.09-54.16a72 72 0 1 0-73.66 0c-27.39 8.94-50.86 27.82-66.09 54.16a8 8 0 1 0 13.85 8c18.84-32.56 52.14-52 89.07-52s70.23 19.44 89.07 52a8 8 0 1 0 13.85-8M72 96a56 56 0 1 1 56 56a56.06 56.06 0 0 1-56-56"/></svg>
+            
+          </div>
+          <p class="last-text "   style="font-family:  Round, sans-serif";> azkartm</p>
+          <div class="ms-4 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="#d7d004" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/></svg>
+            
+          </div>
+          <p class="last-text "   style="font-family:  Round, sans-serif";> Kolkata</p>
+           
+          
+        </div>
+        <p class="done-text text-center">Save Time With Home Delivery</p>
+        <p class="section-description-three">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis. Vivamus ac ultrices diam.</p>
+          <a href="http://" class="first-text">Read More ></a>
+      </div>
+      
+      
+    </div>
+      
+  <!-- get-inn-touch -->
+  
+  
+    <!-- <div class="row align-items-start">
+      <div class="col">
+        <div class="get ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48"><g fill="none" stroke-linejoin="round" stroke-width="4"><path fill="#ff2e2e" stroke="white" d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"/><path fill="white" stroke="#fff" d="M20 24V17.0718L26 20.5359L32 24L26 27.4641L20 30.9282V24Z"/></g></svg>
+        </div>
+      </div>
+      <div class="col">
+          <div class="get-two ">
+            <div class="ser-info-one">
+              <p class="section-heading">BLOG AND NEWS</p>
+              <h2 class="section-sub-heading">Eld Trex <span class="orange-text">News Update</span> </h2>
+              <p class="services-txt-head-dtl"></p>
+              <p class="section-description">Praesent volutpat tempor ligula vel pulvinar. Nullam sed erat finibus, accumsan sed sapien eu. Donec vel facilisis sapien, sed pulvinar lectus. Praesent et dictum sed dolor nec condimentum. Morbi sed volutpat nisl ipsum.</p>
+              <a href="http://
+              service.html" class="notice-button mt-5"></a>
+            </div>
+          </div>
+      </div>
+    </div> -->
+  
+  
+    <!-- Get-in-Touch-->
+    <section class="get-in-touch">
+      
+       <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="get-in-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48"><g fill="none" stroke-linejoin="round" stroke-width="4"><path fill="#f29107" stroke="#ca7f16" d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"/><path fill="white" stroke="#fff" d="M20 24V17.0718L26 20.5359L32 24L26 27.4641L20 30.9282V24Z"/></g></svg>
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <div class="get-two ">
+              <div class="ser-info-one">
+              <p class="section-heading-one">Contact Us</p>
+              <h2 class="section-sub-heading-four">Get <span class="black-text">In Touch</span> </h2>
+              <p class="services-txt-head-dtl"></p>
+              <p class="section-description-two">A dedicated account is provided to every mechanic, driver, and owner for optimizing efficiency. ELD Trex Bluetooth ELD may help you to stay compliant with the fleet regulations.</p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="d-flex">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="white" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>
+                    </div>
+                    <div class="ms-3">
+                      <p class="location">Location</p>
+                      <p class="location-des"> 4554 Admiral Peary Hwy Apt 408 Ebensburg, PA 15931</p>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 512 512"><path fill="white" d="M424 80H88a56.06 56.06 0 0 0-56 56v240a56.06 56.06 0 0 0 56 56h336a56.06 56.06 0 0 0 56-56V136a56.06 56.06 0 0 0-56-56m-14.18 92.63l-144 112a16 16 0 0 1-19.64 0l-144-112a16 16 0 1 1 19.64-25.26L256 251.73l134.18-104.36a16 16 0 0 1 19.64 25.26"/></svg>
+                    </div>
+                    <div class="ms-3">
+                      <p class="location">Mail</p>
+                      <p class="location-des">Info@eldrex.com</p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="d-flex">
+                    <div>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="white" d="M13.649 2.135a10.07 10.07 0 0 0-3.298 0c-.336.456-.664 1.045-.963 1.764c-.282.676-.53 1.446-.736 2.291A29.16 29.16 0 0 1 12 6c1.155 0 2.278.066 3.348.19a15.558 15.558 0 0 0-.735-2.29c-.3-.72-.628-1.31-.964-1.765m2.093 6.123A26.648 26.648 0 0 0 12 8c-1.318 0-2.576.092-3.742.258A26.647 26.647 0 0 0 8 12c0 1.318.092 2.576.258 3.742C9.424 15.908 10.682 16 12 16s2.576-.091 3.742-.258C15.908 14.576 16 13.318 16 12s-.091-2.576-.258-3.742m2.068 7.09c.124-1.07.19-2.193.19-3.348a29.16 29.16 0 0 0-.19-3.348a15.57 15.57 0 0 1 2.29.736c.72.3 1.31.627 1.765.963a10.068 10.068 0 0 1 0 3.298c-.455.336-1.045.664-1.764.964c-.676.281-1.446.53-2.291.735m-2.462 2.462A29.16 29.16 0 0 1 12 18a29.16 29.16 0 0 1-3.348-.19c.206.845.454 1.615.736 2.29c.3.72.627 1.31.963 1.765a10.068 10.068 0 0 0 3.298 0c.336-.455.664-1.045.964-1.764c.281-.676.53-1.446.735-2.291m1.066 3.166l.045-.106c.415-.996.758-2.143 1.014-3.397a19.138 19.138 0 0 0 3.016-.862l.487-.197a10.042 10.042 0 0 1-4.562 4.562m-8.828 0l-.045-.106c-.415-.996-.758-2.143-1.014-3.397a19.136 19.136 0 0 1-3.016-.862l-.487-.197a10.042 10.042 0 0 0 4.562 4.562M6.19 15.348A29.064 29.064 0 0 1 6 12c0-1.155.066-2.278.19-3.348c-.845.206-1.615.454-2.29.736c-.72.3-1.31.627-1.765.963a10.07 10.07 0 0 0 0 3.298c.456.336 1.045.664 1.764.964c.676.281 1.446.53 2.291.735m.337-8.82A19.13 19.13 0 0 1 7.39 3.51l.197-.487a10.042 10.042 0 0 0-4.562 4.562l.106-.045c.996-.415 2.143-.758 3.397-1.014m10.946 0a19.136 19.136 0 0 0-.862-3.017l-.197-.487a10.042 10.042 0 0 1 4.562 4.562l-.106-.045c-.996-.415-2.143-.758-3.397-1.014"/></g></svg>
+                    </div>
+                    <div class="ms-3">
+                      <p class="location">Website</p>
+                      <p class="location-des"> eldrex.com</p>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32"><path fill="white" d="m20.33 21.48l2.24-2.24a2.19 2.19 0 0 1 2.34-.48l2.73 1.09a2.18 2.18 0 0 1 1.36 2v5A2.17 2.17 0 0 1 26.72 29C7.59 27.81 3.73 11.61 3 5.41A2.17 2.17 0 0 1 5.17 3H10a2.16 2.16 0 0 1 2 1.36l1.09 2.73a2.16 2.16 0 0 1-.47 2.34l-2.24 2.24s1.29 8.73 9.95 9.81"/></svg>
+                    </div>
+                    <div class="ms-3">
+                      <p class="location">Phone</p>
+                      <p class="location-des">+1 1254 2685</p>
+                     
+                    </div>
+                    
+                  </div>
+                </div>
+            
+                
+              </div>
+              </div>
+              <div class="get-in-touch-social-icon">
+                <div class="get-in-touch-social-div">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg>
+                  </a>
+                </div>
+                <div class="get-in-touch-social-div">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M16 7a1 1 0 1 1 2 0a1 1 0 0 1-2 0"/><path fill="currentColor" fill-rule="evenodd" d="M12 7.25a4.75 4.75 0 1 0 0 9.5a4.75 4.75 0 0 0 0-9.5M8.75 12a3.25 3.25 0 1 1 6.5 0a3.25 3.25 0 0 1-6.5 0" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M17.258 2.833a47.721 47.721 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a45.922 45.922 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.77 47.77 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a45.914 45.914 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.22 46.22 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.421 44.421 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.217 46.217 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.421 44.421 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516" clip-rule="evenodd"/></svg>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+           
+              
+            </div>
+          </div>
+        </div>
+      
+       
+       </div>
+</div>
+
+   
+
+
+  <!-- FAQS -->
+  <div class="faq">
+    <div class="ser-info">
+      <P class="section-heading text-center">FAQ</P>
+      <h2 class="section-sub-heading text-center">Frequenly<span class="orange-text">Asked Questions</span> </h2>
+      <p class="services-txt-head-dtl"></p>
+      <p class="section-description text-center">Praesent volutpat tempor ligula vel pulvinar. Nullam sed erat finibus, accumsan sed sapien eu. Donec vel facilisis sapien, sed pulvinar lectus. Praesent et dictum sed dolor nec condimentum. Morbi sed volutpat nisl ipsum.</p>
+    </div>
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-md-6">
+          <p class="text-left fs-2">Cargo Question</p>
+          <div class='faq'>
+            
+            <input id='faq-a' type='checkbox'>
+            <label for='faq-a'>
+              
+              <p class="faq-heading">Is this Dropbox upgrade safe?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">It is completely safe and totally legal! There will is no record of this process to your shared Dropbox users.</p>
+            </label>
+            <input id='faq-b' type='checkbox'>
+            <label for='faq-b'>
+              <p class="faq-heading">How long does it take to upgrade my Dropbox?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">Upgrading is a slow process and will take around 3-10 days. <strong>In order to control the risk and secure the space you earned, we will gradually process it.</strong> during this time you can still use your account as normal as usual.</p>
+            </label>
+            <input id='faq-c' type='checkbox'>
+            <label for='faq-c'>
+              <p class="faq-heading">What do you need to do the upgrade?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">NO ACCESS TO YOUR PERSONAL ACCOUNT OR INFO IS REQUIRED! All I need from you is your Dropbox referral link.</p>
+            </label>
+            <input id='faq-d' type='checkbox'>
+            <label for='faq-d'>
+              <p class="faq-heading">Where do I find my personal Dropbox referral link?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">Log in to the Dropbox website and get your referral link: www.dropbox.com/referral. Copy the link (example link: <strong>https://db.tt/xYxYzyXy</strong>) and send it via eBay message. </p>
+            </label>
+            <input id='faq-e' type='checkbox'>
+            <label for='faq-e'>
+              <p class="faq-heading">Can I split the purchased space between several accounts?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">Yes, you can! Just send me all the referral links during the checkout process, including a short note, what account should receive which amount of space.</p>
+            </label>
+             </div>
+        </div>
+        <div class="col-md-6">
+          <p class="text-left fs-2">Logistics Question</p>
+          <div class='faq'>
+            <input id='faq-a' type='checkbox'>
+            <label for='faq-a'>
+              <p class="faq-heading">Is this Dropbox upgrade safe?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">It is completely safe and totally legal! There will is no record of this process to your shared Dropbox users.</p>
+            </label>
+            <input id='faq-b' type='checkbox'>
+            <label for='faq-b'>
+              <p class="faq-heading">How long does it take to upgrade my Dropbox?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">Upgrading is a slow process and will take around 3-10 days. <strong>In order to control the risk and secure the space you earned, we will gradually process it.</strong> during this time you can still use your account as normal as usual.</p>
+            </label>
+            <input id='faq-c' type='checkbox'>
+            <label for='faq-c'>
+              <p class="faq-heading">What do you need to do the upgrade?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">NO ACCESS TO YOUR PERSONAL ACCOUNT OR INFO IS REQUIRED! All I need from you is your Dropbox referral link.</p>
+            </label>
+            <input id='faq-d' type='checkbox'>
+            <label for='faq-d'>
+              <p class="faq-heading">Where do I find my personal Dropbox referral link?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">Log in to the Dropbox website and get your referral link: www.dropbox.com/referral. Copy the link (example link: <strong>https://db.tt/xYxYzyXy</strong>) and send it via eBay message. </p>
+            </label>
+            <input id='faq-e' type='checkbox'>
+            <label for='faq-e'>
+              <p class="faq-heading">Can I split the purchased space between several accounts?</p>
+              <div class='faq-arrow'></div>
+                <p class="faq-text">Yes, you can! Just send me all the referral links during the checkout process, including a short note, what account should receive which amount of space.</p>
+            </label>
+             </div>
+        </div>
+        
+      </div>
+  </div>
+
+
+
+  <!-- Footer Class -->
+  <footer class="site-footer">
+    <div class="container-two"> 
+      <div class="row">
+  
+        <div class="col-md-3">
+          <img src="Assets/image/Logo.png" alt="ELDE TREX Logo" class="footer-logo">
+        </div>
+  
+        <div class="col-md-3">
+          <h4>Products</h4>
+          <p>ELD</p>
+          <p>GPS FLEET CHECKING</p>
+          <p>AL DISPATCH</p>
+          <p>PRICING</p>
+          <p>TUTORIAL</p>
+          <p>PORTAL</p>
+        </div>
+  
+        <div class="col-md-3"> 
+          <h4>Quick Links</h4>
+          <!-- <ul class="footer-links"> 
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            </ul> -->
+          <p>AL DISPATCH</p>
+          <p>PRICING</p>
+          <p>TUTORIAL</p>
+          <p>PORTAL</p>
+        </div>
+  
+        <div class="col-md-2"> 
+          <h4>Contact Us</h4>
+          <ul class="footer-links"> 
+            <li><a href="#">ELD</a></li>
+            <li><a href="#">AI Dual Dashcam</a></li>
+            </ul>
+        </div>
+  
+        
+  
+      </div> 
+  
+      <hr> <div class="copyright">
+        <p>&copy; 2023 ELDE TREX. All Rights Reserved.</p>
+      </div>
+    </div> </footer>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="Assets/js/jquery-3.7.1.min.js"></script>
+  <script src="Assets/js/bootstrap.bundle.min.js"></script>
+  <script src="Assets//js/slick.min.js"></script>
+  <script src="work.js"></script>
+</body>
+</html>
